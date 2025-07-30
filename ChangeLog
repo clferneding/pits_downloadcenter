@@ -1,0 +1,15 @@
+2025-05-05 Tino Amm  <tino.amm@leg-thueringen.de>
+	Version 6.0.0
+	* Sortierung Downloadliste nach tstamp; Classes\Controller\DownloadController.php - showAction:
+        $getFiles = $storageRepository->getFilesInFolder(
+            $folderObject,
+            $start = 0,
+            $maxNumberOfItems = 0,
+            $useFilters = TRUE,
+            $recursive = TRUE,
++	    $sort = 'tstamp',
++	    $sortRev = TRUE
+        );
+
+
+

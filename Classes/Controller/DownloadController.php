@@ -189,7 +189,9 @@ class DownloadController extends AbstractController
             $start = 0,
             $maxNumberOfItems = 0,
             $useFilters = TRUE,
-            $recursive = TRUE
+            $recursive = TRUE,
+            $sort = 'tstamp',
+            $sortRev = TRUE
         );
 
         // basePath
